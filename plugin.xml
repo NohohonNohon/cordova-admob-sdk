@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin 
     xmlns="http://apache.org/cordova/ns/plugins/1.0" 
-    xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-admob-sdk" version="0.24.1">
+    xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-admob-sdk" version="0.25.0">
     <name>AdMob SDK</name>
     <description>Google AdMob SDK for Cordova</description>
     <author>Ratson</author>
@@ -13,16 +13,16 @@
         <engine name="cordova-android" version=">=6.3.0"/>
     </engines>
     <platform name="android">
-        <preference name="PLAY_SERVICES_VERSION" default="11.0.4"/>
-        <framework src="com.google.android.gms:play-services-base:$PLAY_SERVICES_VERSION" />
-        <framework src="com.google.android.gms:play-services-ads:$PLAY_SERVICES_VERSION" />
+        <preference name="PLAY_SERVICES_BASE_VERSION" default="17.2.1"/>
+        <preference name="PLAY_SERVICES_ADS_VERSION" default="19.1.0"/>
+        <framework src="com.google.android.gms:play-services-base:$PLAY_SERVICES_BASE_VERSION" />
+        <framework src="com.google.android.gms:play-services-ads:$PLAY_SERVICES_ADS_VERSION" />
     </platform>
     <platform name="ios">
         <framework src="src/ios/GoogleMobileAds.framework" custom="true" />
         <framework src="AdSupport.framework" />
         <framework src="AudioToolbox.framework" />
         <framework src="AVFoundation.framework" />
-        <framework src="CoreBluetooth.framework" />
         <framework src="CoreGraphics.framework" />
         <framework src="CoreMedia.framework" />
         <framework src="CoreMotion.framework" />
