@@ -1,0 +1,2 @@
+Download and store the Google Mobile Ads SDK.
+https://developers.google.com/admob/ios/download
